@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 90;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9516F0F33062595A004A990C /* NewsTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9516F0F23062595A004A990C /* NewsTicker.swift */; };
+		9516F0F53062595B004A990C /* LightSignalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9516F0F43062595B004A990C /* LightSignalView.swift */; };
+		9516F0F73062595C004A990C /* SheltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9516F0F63062595C004A990C /* SheltersView.swift */; };
+		9516F0FB3062595E004A990C /* OfflineMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9516F0FA3062595E004A990C /* OfflineMapView.swift */; };
+		9528591B3062DBDF00F8D0A5 /* MeshModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9528591A3062DBDF00F8D0A5 /* MeshModels.swift */; };
+		9528591D3062DBF600F8D0A5 /* MeshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9528591C3062DBF600F8D0A5 /* MeshController.swift */; };
+		9528591F3062DC3E00F8D0A5 /* MeshComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9528591E3062DC3E00F8D0A5 /* MeshComponents.swift */; };
+		952859213062DE4100F8D0A5 /* DirectMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952859203062DE4100F8D0A5 /* DirectMessageView.swift */; };
+		952859233062DF9300F8D0A5 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952859223062DF9300F8D0A5 /* QRCodeView.swift */; };
+		952859253062DFA000F8D0A5 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952859243062DFA000F8D0A5 /* QRScannerView.swift */; };
+		952859273062F52D00F8D0A5 /* MapModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952859263062F52D00F8D0A5 /* MapModels.swift */; };
+		952859293062F54400F8D0A5 /* OfflineMapCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952859283062F54400F8D0A5 /* OfflineMapCache.swift */; };
+		9528592B3062F55200F8D0A5 /* CompassWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9528592A3062F55200F8D0A5 /* CompassWidget.swift */; };
+		9528592D3062FE3700F8D0A5 /* SheltersModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9528592C3062FE3700F8D0A5 /* SheltersModels.swift */; };
+		95285944306307FF00F8D0A5 /* BackendReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95285943306307FF00F8D0A5 /* BackendReporter.swift */; };
+		952859483063C31400F8D0A5 /* WarsawShelters.json in Resources */ = {isa = PBXBuildFile; fileRef = 952859473063C31400F8D0A5 /* WarsawShelters.json */; };
+		9528594A3063C5DB00F8D0A5 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952859493063C5DB00F8D0A5 /* AppEnvironment.swift */; };
+		9528594C3063CAD400F8D0A5 /* CPRMetronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9528594B3063CAD400F8D0A5 /* CPRMetronome.swift */; };
+		9528594E3063CAE200F8D0A5 /* CPRMetronomeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9528594D3063CAE200F8D0A5 /* CPRMetronomeCard.swift */; };
+		95285950306496A100F8D0A5 /* NewsNowModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9528594F306496A100F8D0A5 /* NewsNowModels.swift */; };
+		95285952306496AF00F8D0A5 /* NewsNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95285951306496AF00F8D0A5 /* NewsNowView.swift */; };
+		95285954306496C900F8D0A5 /* SurvivalPrepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95285953306496C900F8D0A5 /* SurvivalPrepView.swift */; };
+		952859563064970B00F8D0A5 /* EmergencyChargingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952859553064970B00F8D0A5 /* EmergencyChargingView.swift */; };
+		952859583064972500F8D0A5 /* WoundInfectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952859573064972500F8D0A5 /* WoundInfectionView.swift */; };
+		9528595A3064973C00F8D0A5 /* FieldSurvivalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952859593064973C00F8D0A5 /* FieldSurvivalView.swift */; };
+		9528595C3064975100F8D0A5 /* EvacuationBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9528595B3064975100F8D0A5 /* EvacuationBackpackView.swift */; };
+		9528595E30649F4A00F8D0A5 /* GlassStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9528595D30649F4A00F8D0A5 /* GlassStyle.swift */; };
+		9528596030649F5700F8D0A5 /* AppInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9528595F30649F5700F8D0A5 /* AppInfoView.swift */; };
+		952859623064FC8200F8D0A5 /* FractureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952859613064FC8200F8D0A5 /* FractureView.swift */; };
+		952859643064FC9000F8D0A5 /* RecoveryPositionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952859633064FC9000F8D0A5 /* RecoveryPositionView.swift */; };
+		956AA0A6306EB05900EE20A6 /* SirenSignalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956AA0A5306EB05900EE20A6 /* SirenSignalsView.swift */; };
+		956AA0BE306EB4D400EE20A6 /* EmergencyLightSignalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956AA0BD306EB4D400EE20A6 /* EmergencyLightSignalView.swift */; };
+		956E7B103061AA0400764903 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E7B0F3061AA0400764903 /* AlertView.swift */; };
+		956E7B123061AA1000764903 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E7B113061AA1000764903 /* Tile.swift */; };
+		956E7B143061AA6000764903 /* CommunicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E7B133061AA6000764903 /* CommunicationView.swift */; };
+		956E7B183061AA6C00764903 /* FirstAidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E7B173061AA6B00764903 /* FirstAidView.swift */; };
+		9596641B3062964E00308A7E /* LightChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9596641A3062964E00308A7E /* LightChannel.swift */; };
+		9596641D306296FB00308A7E /* LightSignalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9596641C306296FB00308A7E /* LightSignalProtocol.swift */; };
+		9596641F3062970600308A7E /* LightSignalTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9596641E3062970600308A7E /* LightSignalTutorialView.swift */; };
+		959664213062A29E00308A7E /* FirstAidComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959664203062A29E00308A7E /* FirstAidComponents.swift */; };
+		959664233062A2B000308A7E /* BleedingControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959664223062A2B000308A7E /* BleedingControlView.swift */; };
+		959664253062A2C100308A7E /* ResuscitationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959664243062A2C100308A7E /* ResuscitationView.swift */; };
+		959664293062AA2700308A7E /* AlertModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959664283062AA2700308A7E /* AlertModels.swift */; };
+		9596642B3062AA3600308A7E /* AlertComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9596642A3062AA3600308A7E /* AlertComponents.swift */; };
+		9596642D3062AA4000308A7E /* AddAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9596642C3062AA4000308A7E /* AddAlertView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000120 /* WarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9516F0F23062595A004A990C /* NewsTicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTicker.swift; sourceTree = "<group>"; };
+		9516F0F43062595B004A990C /* LightSignalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightSignalView.swift; sourceTree = "<group>"; };
+		9516F0F63062595C004A990C /* SheltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheltersView.swift; sourceTree = "<group>"; };
+		9516F0FA3062595E004A990C /* OfflineMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineMapView.swift; sourceTree = "<group>"; };
+		9528591A3062DBDF00F8D0A5 /* MeshModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshModels.swift; sourceTree = "<group>"; };
+		9528591C3062DBF600F8D0A5 /* MeshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshController.swift; sourceTree = "<group>"; };
+		9528591E3062DC3E00F8D0A5 /* MeshComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshComponents.swift; sourceTree = "<group>"; };
+		952859203062DE4100F8D0A5 /* DirectMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageView.swift; sourceTree = "<group>"; };
+		952859223062DF9300F8D0A5 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		952859243062DFA000F8D0A5 /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
+		952859263062F52D00F8D0A5 /* MapModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModels.swift; sourceTree = "<group>"; };
+		952859283062F54400F8D0A5 /* OfflineMapCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineMapCache.swift; sourceTree = "<group>"; };
+		9528592A3062F55200F8D0A5 /* CompassWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassWidget.swift; sourceTree = "<group>"; };
+		9528592C3062FE3700F8D0A5 /* SheltersModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheltersModels.swift; sourceTree = "<group>"; };
+		952859323063058300F8D0A5 /* WarAppConsole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarAppConsole.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95285943306307FF00F8D0A5 /* BackendReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendReporter.swift; sourceTree = "<group>"; };
+		952859473063C31400F8D0A5 /* WarsawShelters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WarsawShelters.json; sourceTree = "<group>"; };
+		952859493063C5DB00F8D0A5 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		9528594B3063CAD400F8D0A5 /* CPRMetronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPRMetronome.swift; sourceTree = "<group>"; };
+		9528594D3063CAE200F8D0A5 /* CPRMetronomeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPRMetronomeCard.swift; sourceTree = "<group>"; };
+		9528594F306496A100F8D0A5 /* NewsNowModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsNowModels.swift; sourceTree = "<group>"; };
+		95285951306496AF00F8D0A5 /* NewsNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsNowView.swift; sourceTree = "<group>"; };
+		95285953306496C900F8D0A5 /* SurvivalPrepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvivalPrepView.swift; sourceTree = "<group>"; };
+		952859553064970B00F8D0A5 /* EmergencyChargingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyChargingView.swift; sourceTree = "<group>"; };
+		952859573064972500F8D0A5 /* WoundInfectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoundInfectionView.swift; sourceTree = "<group>"; };
+		952859593064973C00F8D0A5 /* FieldSurvivalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurvivalView.swift; sourceTree = "<group>"; };
+		9528595B3064975100F8D0A5 /* EvacuationBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvacuationBackpackView.swift; sourceTree = "<group>"; };
+		9528595D30649F4A00F8D0A5 /* GlassStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassStyle.swift; sourceTree = "<group>"; };
+		9528595F30649F5700F8D0A5 /* AppInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoView.swift; sourceTree = "<group>"; };
+		952859613064FC8200F8D0A5 /* FractureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractureView.swift; sourceTree = "<group>"; };
+		952859633064FC9000F8D0A5 /* RecoveryPositionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPositionView.swift; sourceTree = "<group>"; };
+		956AA0A5306EB05900EE20A6 /* SirenSignalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SirenSignalsView.swift; sourceTree = "<group>"; };
+		956AA0BD306EB4D400EE20A6 /* EmergencyLightSignalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyLightSignalView.swift; sourceTree = "<group>"; };
+		956E7B0F3061AA0400764903 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		956E7B113061AA1000764903 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		956E7B133061AA6000764903 /* CommunicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationView.swift; sourceTree = "<group>"; };
+		956E7B173061AA6B00764903 /* FirstAidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidView.swift; sourceTree = "<group>"; };
+		9596641A3062964E00308A7E /* LightChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightChannel.swift; sourceTree = "<group>"; };
+		9596641C306296FB00308A7E /* LightSignalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightSignalProtocol.swift; sourceTree = "<group>"; };
+		9596641E3062970600308A7E /* LightSignalTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightSignalTutorialView.swift; sourceTree = "<group>"; };
+		959664203062A29E00308A7E /* FirstAidComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidComponents.swift; sourceTree = "<group>"; };
+		959664223062A2B000308A7E /* BleedingControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleedingControlView.swift; sourceTree = "<group>"; };
+		959664243062A2C100308A7E /* ResuscitationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResuscitationView.swift; sourceTree = "<group>"; };
+		959664283062AA2700308A7E /* AlertModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModels.swift; sourceTree = "<group>"; };
+		9596642A3062AA3600308A7E /* AlertComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertComponents.swift; sourceTree = "<group>"; };
+		9596642C3062AA4000308A7E /* AddAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlertView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		952859193062DBD700F8D0A5 /* Exceptions for "WarApp" folder in "WarApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 000000000000000100000000 /* WarApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		000000000000000000000010 /* WarApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				952859193062DBD700F8D0A5 /* Exceptions for "WarApp" folder in "WarApp" target */,
+			);
+			path = WarApp;
+			sourceTree = "<group>";
+		};
+		952859333063058300F8D0A5 /* WarAppConsole */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WarAppConsole;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000130000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		9528592F3063058300F8D0A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000010 /* WarApp */,
+				956E7B0F3061AA0400764903 /* AlertView.swift */,
+				956E7B113061AA1000764903 /* Tile.swift */,
+				956E7B133061AA6000764903 /* CommunicationView.swift */,
+				956E7B173061AA6B00764903 /* FirstAidView.swift */,
+				9516F0F23062595A004A990C /* NewsTicker.swift */,
+				9516F0F43062595B004A990C /* LightSignalView.swift */,
+				9516F0F63062595C004A990C /* SheltersView.swift */,
+				9516F0FA3062595E004A990C /* OfflineMapView.swift */,
+				9596641A3062964E00308A7E /* LightChannel.swift */,
+				9596641C306296FB00308A7E /* LightSignalProtocol.swift */,
+				9596641E3062970600308A7E /* LightSignalTutorialView.swift */,
+				959664203062A29E00308A7E /* FirstAidComponents.swift */,
+				959664223062A2B000308A7E /* BleedingControlView.swift */,
+				959664243062A2C100308A7E /* ResuscitationView.swift */,
+				959664283062AA2700308A7E /* AlertModels.swift */,
+				9596642A3062AA3600308A7E /* AlertComponents.swift */,
+				9596642C3062AA4000308A7E /* AddAlertView.swift */,
+				9528591A3062DBDF00F8D0A5 /* MeshModels.swift */,
+				9528591C3062DBF600F8D0A5 /* MeshController.swift */,
+				9528591E3062DC3E00F8D0A5 /* MeshComponents.swift */,
+				952859203062DE4100F8D0A5 /* DirectMessageView.swift */,
+				952859223062DF9300F8D0A5 /* QRCodeView.swift */,
+				952859243062DFA000F8D0A5 /* QRScannerView.swift */,
+				952859263062F52D00F8D0A5 /* MapModels.swift */,
+				952859283062F54400F8D0A5 /* OfflineMapCache.swift */,
+				9528592A3062F55200F8D0A5 /* CompassWidget.swift */,
+				9528592C3062FE3700F8D0A5 /* SheltersModels.swift */,
+				952859333063058300F8D0A5 /* WarAppConsole */,
+				95285943306307FF00F8D0A5 /* BackendReporter.swift */,
+				952859473063C31400F8D0A5 /* WarsawShelters.json */,
+				952859493063C5DB00F8D0A5 /* AppEnvironment.swift */,
+				9528594B3063CAD400F8D0A5 /* CPRMetronome.swift */,
+				9528594D3063CAE200F8D0A5 /* CPRMetronomeCard.swift */,
+				9528594F306496A100F8D0A5 /* NewsNowModels.swift */,
+				95285951306496AF00F8D0A5 /* NewsNowView.swift */,
+				95285953306496C900F8D0A5 /* SurvivalPrepView.swift */,
+				952859553064970B00F8D0A5 /* EmergencyChargingView.swift */,
+				952859573064972500F8D0A5 /* WoundInfectionView.swift */,
+				952859593064973C00F8D0A5 /* FieldSurvivalView.swift */,
+				9528595B3064975100F8D0A5 /* EvacuationBackpackView.swift */,
+				9528595D30649F4A00F8D0A5 /* GlassStyle.swift */,
+				9528595F30649F5700F8D0A5 /* AppInfoView.swift */,
+				952859613064FC8200F8D0A5 /* FractureView.swift */,
+				952859633064FC9000F8D0A5 /* RecoveryPositionView.swift */,
+				956AA0A5306EB05900EE20A6 /* SirenSignalsView.swift */,
+				956AA0BD306EB4D400EE20A6 /* EmergencyLightSignalView.swift */,
+				000000000000000000000020 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000120 /* WarApp.app */,
+				952859323063058300F8D0A5 /* WarAppConsole.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000100000000 /* WarApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000110000000 /* Build configuration list for PBXNativeTarget "WarApp" */;
+			buildPhases = (
+				000000000000000120000000 /* Sources */,
+				000000000000000130000000 /* Frameworks */,
+				000000000000000140000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				000000000000000000000010 /* WarApp */,
+			);
+			name = WarApp;
+			productName = MyApp;
+			productReference = 000000000000000000000120 /* WarApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		952859313063058300F8D0A5 /* WarAppConsole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9528593A3063058400F8D0A5 /* Build configuration list for PBXNativeTarget "WarAppConsole" */;
+			buildPhases = (
+				9528592E3063058300F8D0A5 /* Sources */,
+				9528592F3063058300F8D0A5 /* Frameworks */,
+				952859303063058300F8D0A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				952859333063058300F8D0A5 /* WarAppConsole */,
+			);
+			name = WarAppConsole;
+			productName = WarAppConsole;
+			productReference = 952859323063058300F8D0A5 /* WarAppConsole.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					000000000000000100000000 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					952859313063058300F8D0A5 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = 000000000000000010000000 /* Build configuration list for PBXProject "WarApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000001;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 90;
+			productRefGroup = 000000000000000000000020 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000100000000 /* WarApp */,
+				952859313063058300F8D0A5 /* WarAppConsole */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000140000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				952859483063C31400F8D0A5 /* WarsawShelters.json in Resources */,
+			);
+		};
+		952859303063058300F8D0A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000120000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				9528592B3062F55200F8D0A5 /* CompassWidget.swift in Sources */,
+				952859623064FC8200F8D0A5 /* FractureView.swift in Sources */,
+				9528595C3064975100F8D0A5 /* EvacuationBackpackView.swift in Sources */,
+				9596642B3062AA3600308A7E /* AlertComponents.swift in Sources */,
+				9528595E30649F4A00F8D0A5 /* GlassStyle.swift in Sources */,
+				952859213062DE4100F8D0A5 /* DirectMessageView.swift in Sources */,
+				9516F0F53062595B004A990C /* LightSignalView.swift in Sources */,
+				9596641D306296FB00308A7E /* LightSignalProtocol.swift in Sources */,
+				952859253062DFA000F8D0A5 /* QRScannerView.swift in Sources */,
+				956E7B143061AA6000764903 /* CommunicationView.swift in Sources */,
+				959664253062A2C100308A7E /* ResuscitationView.swift in Sources */,
+				9528594C3063CAD400F8D0A5 /* CPRMetronome.swift in Sources */,
+				9596641B3062964E00308A7E /* LightChannel.swift in Sources */,
+				9528591D3062DBF600F8D0A5 /* MeshController.swift in Sources */,
+				952859293062F54400F8D0A5 /* OfflineMapCache.swift in Sources */,
+				9596642D3062AA4000308A7E /* AddAlertView.swift in Sources */,
+				952859643064FC9000F8D0A5 /* RecoveryPositionView.swift in Sources */,
+				959664233062A2B000308A7E /* BleedingControlView.swift in Sources */,
+				95285944306307FF00F8D0A5 /* BackendReporter.swift in Sources */,
+				956AA0BE306EB4D400EE20A6 /* EmergencyLightSignalView.swift in Sources */,
+				9516F0FB3062595E004A990C /* OfflineMapView.swift in Sources */,
+				959664293062AA2700308A7E /* AlertModels.swift in Sources */,
+				95285950306496A100F8D0A5 /* NewsNowModels.swift in Sources */,
+				952859233062DF9300F8D0A5 /* QRCodeView.swift in Sources */,
+				9516F0F33062595A004A990C /* NewsTicker.swift in Sources */,
+				952859563064970B00F8D0A5 /* EmergencyChargingView.swift in Sources */,
+				9528591F3062DC3E00F8D0A5 /* MeshComponents.swift in Sources */,
+				9516F0F73062595C004A990C /* SheltersView.swift in Sources */,
+				9528591B3062DBDF00F8D0A5 /* MeshModels.swift in Sources */,
+				952859583064972500F8D0A5 /* WoundInfectionView.swift in Sources */,
+				9528595A3064973C00F8D0A5 /* FieldSurvivalView.swift in Sources */,
+				956E7B103061AA0400764903 /* AlertView.swift in Sources */,
+				9528594A3063C5DB00F8D0A5 /* AppEnvironment.swift in Sources */,
+				9528596030649F5700F8D0A5 /* AppInfoView.swift in Sources */,
+				956E7B183061AA6C00764903 /* FirstAidView.swift in Sources */,
+				956E7B123061AA1000764903 /* Tile.swift in Sources */,
+				956AA0A6306EB05900EE20A6 /* SirenSignalsView.swift in Sources */,
+				95285954306496C900F8D0A5 /* SurvivalPrepView.swift in Sources */,
+				95285952306496AF00F8D0A5 /* NewsNowView.swift in Sources */,
+				9528592D3062FE3700F8D0A5 /* SheltersModels.swift in Sources */,
+				9596641F3062970600308A7E /* LightSignalTutorialView.swift in Sources */,
+				9528594E3063CAE200F8D0A5 /* CPRMetronomeCard.swift in Sources */,
+				952859273062F52D00F8D0A5 /* MapModels.swift in Sources */,
+				959664213062A29E00308A7E /* FirstAidComponents.swift in Sources */,
+			);
+		};
+		9528592E3063058300F8D0A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000011000000 /* Debug configuration for PBXProject "WarApp" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DRIVERKIT_DEPLOYMENT_TARGET = 27.0;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROJECT_UNIQUE_VALUE = OTPNKL88;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 27.0;
+				WATCHOS_DEPLOYMENT_TARGET = 27.0;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		000000000000000012000000 /* Release configuration for PBXProject "WarApp" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DRIVERKIT_DEPLOYMENT_TARGET = 27.0;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PROJECT_UNIQUE_VALUE = OTPNKL88;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TVOS_DEPLOYMENT_TARGET = 27.0;
+				WATCHOS_DEPLOYMENT_TARGET = 27.0;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		000000000000000111000000 /* Debug configuration for PBXNativeTarget "WarApp" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32NYNR2AN7;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WarApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Aplikacja używa aparatu do nadawania i odbierania sygnałów świetlnych (kod Morse'a i Świetlik) oraz do skanowania kodów QR kontaktów MESH.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Aplikacja używa lokalnej sieci (Wi-Fi/Bluetooth), aby łączyć się z innymi urządzeniami w zasięgu i tworzyć sieć MESH do komunikacji bez internetu.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Aplikacja używa lokalizacji, aby dołączyć współrzędne GEO do zgłoszenia SOS przez MESH oraz automatycznie pobierać i pokazywać mapę okolicy (10 km) dostępną offline.";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grzegorzjanncwakpersonalteam.WarApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		000000000000000112000000 /* Release configuration for PBXNativeTarget "WarApp" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32NYNR2AN7;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WarApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Aplikacja używa aparatu do nadawania i odbierania sygnałów świetlnych (kod Morse'a i Świetlik) oraz do skanowania kodów QR kontaktów MESH.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Aplikacja używa lokalnej sieci (Wi-Fi/Bluetooth), aby łączyć się z innymi urządzeniami w zasięgu i tworzyć sieć MESH do komunikacji bez internetu.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Aplikacja używa lokalizacji, aby dołączyć współrzędne GEO do zgłoszenia SOS przez MESH oraz automatycznie pobierać i pokazywać mapę okolicy (10 km) dostępną offline.";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grzegorzjanncwakpersonalteam.WarApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		9528593B3063058400F8D0A5 /* Debug configuration for PBXNativeTarget "WarAppConsole" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.WarAppConsole;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		9528593C3063058400F8D0A5 /* Release configuration for PBXNativeTarget "WarAppConsole" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.WarAppConsole;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000010000000 /* Build configuration list for PBXProject "WarApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000011000000 /* Debug configuration for PBXProject "WarApp" */,
+				000000000000000012000000 /* Release configuration for PBXProject "WarApp" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		000000000000000110000000 /* Build configuration list for PBXNativeTarget "WarApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000111000000 /* Debug configuration for PBXNativeTarget "WarApp" */,
+				000000000000000112000000 /* Release configuration for PBXNativeTarget "WarApp" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		9528593A3063058400F8D0A5 /* Build configuration list for PBXNativeTarget "WarAppConsole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9528593B3063058400F8D0A5 /* Debug configuration for PBXNativeTarget "WarAppConsole" */,
+				9528593C3063058400F8D0A5 /* Release configuration for PBXNativeTarget "WarAppConsole" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000000 /* Project object */;
+}
